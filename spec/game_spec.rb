@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+Warning[:experimental] = false
+
 require_relative '../lib/game'
 require_relative '../lib/player'
 require 'rainbow'
@@ -23,6 +25,7 @@ describe Game do
     context 'when #check_rows is false twice' do
       before do
         allow(game_loop).to receive(:check_rows).and_return(false, false, true)
+        allow(game_loop).to receive(:determine_winner)
       end
 
       it 'it calls #turn_order thrice' do
@@ -35,6 +38,7 @@ describe Game do
       before do
         allow(game_loop).to receive(:check_rows).and_return(false)
         allow(game_loop).to receive(:check_columns).and_return(false, false, true)
+        allow(game_loop).to receive(:determine_winner)
       end
 
       it 'it calls #turn_order thrice' do
@@ -48,6 +52,7 @@ describe Game do
         allow(game_loop).to receive(:check_rows).and_return(false)
         allow(game_loop).to receive(:check_columns).and_return(false)
         allow(game_loop).to receive(:check_diagonals).and_return(false, false, true)
+        allow(game_loop).to receive(:determine_winner)
       end
 
       it 'it calls #turn_order thrice' do
