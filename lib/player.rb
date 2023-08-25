@@ -4,13 +4,15 @@ require 'rainbow'
 
 class Player
   attr_reader :name
+  attr_accessor :number
 
   def initialize
     @name = ''
+    @number = 0
   end
 
-  def get_name(number)
-    print "Enter name of Player ##{number}: "
+  def get_name
+    print "Enter name of Player ##{@number}: "
 
     @name = gets.chomp
   end
