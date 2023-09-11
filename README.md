@@ -1,4 +1,9 @@
 # Connect Four
-It’s a basic game where each player takes turns dropping pieces into the cage. Players win if they manage to get 4 of their pieces consecutively in a row, column, or along a diagonal.
-# Purpose
-To practice test driven development.
+
+Final project for [The Odin Project](https://www.theodinproject.com/lessons/ruby-connect-four) Rspec course.
+
+## Description
+
+Connect Four is a game in which the players choose a color and then take turns dropping colored tokens into a six-row, seven-column vertically suspended grid. The pieces fall straight down, occupying the lowest available space within the column. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own tokens. -[Wikipedia](https://en.wikipedia.org/wiki/Connect_Four)
+
+### Play
