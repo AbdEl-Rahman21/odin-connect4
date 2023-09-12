@@ -8,4 +8,4 @@ Connect Four is a game in which the players choose a color and then take turns d
 
 ### Play
 
-[Play here](https://replit.com/@AbdEl-Rahman21/odin-connect4)
+[Play here](https://replit.com/@AbdEl-Rahman21/Connect-Four)
